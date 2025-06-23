@@ -18,7 +18,7 @@ data "aws_vpc" "blog"{
   default = true
 }
 
-resource "aws_instance" "blog_sg" {
+resource "aws_instance" "blog" {
   ami           = data.aws_ami.app_ami.id
   instance_type = var.instance_type
 
